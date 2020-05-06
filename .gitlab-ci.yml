@@ -1,10 +1,21 @@
 variables:
 	name: sentry_react
 
+cache:
+  paths:
+     - node_modules
+
 dev:
 	stage: dev
   image: node:10-alpine
+	before_script:
+		 - echo 'before'
 	script:
-		- echo 'hello'
+		 - echo 'hello'
+		 - node -v
+	only:
+	   - master
+
+	
 
 
