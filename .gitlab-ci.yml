@@ -1,0 +1,10 @@
+variables:
+	name: sentry_react
+
+dev:
+	stage: dev
+  image: node:10-alpine
+	script:
+		- echo 'hello'
+
+
